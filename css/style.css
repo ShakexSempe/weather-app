@@ -1,11 +1,66 @@
-* {
+*, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: #b3e6ff;
+  color: #002233;
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-right: 2px solid #002233;
+}
+.header-left .header-current-temp {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.header-right {
+  display: grid;
+  width: 50%;
+  justify-content: space-between;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+}
+.header-right .info-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-right .info-group .label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.6rem;
+  color: #004466;
+}
+.header-right .info-group .value-sub-info {
+  font-weight: lighter;
+  font-size: 0.75rem;
+}
+
+.weather-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.weather-icon.large {
+  height: 80px;
+  width: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */
