@@ -9,6 +9,10 @@ body {
   color: #002233;
   font-family: sans-serif;
 }
+body.blurred {
+  filter: blur(3px);
+  overflow: hidden;
+}
 
 .header {
   display: flex;

@@ -12,6 +12,11 @@ body {
     background-color: $light-blue;
     color: $dark-blue;
     font-family: sans-serif;
+    // LOADING BLUR EFFECT
+    &.blurred {
+        filter: blur(3px);
+        overflow: hidden;
+    }
 }
 
 // HEADER
