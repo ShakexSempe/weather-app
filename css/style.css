@@ -40,6 +40,7 @@ body.blurred {
   gap: 0.5rem;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(2, auto);
+  padding: 1rem;
 }
 .header-right .info-group {
   display: flex;
@@ -86,6 +87,24 @@ body.blurred {
   font-size: 0.75rem;
   color: #004466;
   margin-top: 0.5rem;
+}
+
+.hour-section {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+}
+
+.hour-row {
+  background-color: #99cce6;
+}
+.hour-row:nth-child(2n) {
+  background-color: #85c2e0;
+}
+.hour-row td {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

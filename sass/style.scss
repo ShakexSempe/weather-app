@@ -1,6 +1,8 @@
 $dark-blue: hsl(200, 100%, 10%);
 $dark-blue-lt: hsl(200, 100%, 20%);
 $light-blue: hsl(200, 100%, 85%);
+$light-blue-table: hsl(200, 60%, 75%);
+$light-blue-row: hsl(200, 60%, 70%);
 
 *, *::after, *::before {
     margin: 0;
@@ -51,6 +53,7 @@ body {
     gap: 0.5rem;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
+    padding: 1rem;
     
     // INFO GROUP - CENTER ALIGNMENT
     .info-group {
@@ -114,4 +117,23 @@ body {
     }
 }
 
+// HOUR SECTION - TABLE STYLE
+.hour-section {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+}
 
+.hour-row {
+    background-color: $light-blue-table;
+    &:nth-child(2n){
+        background-color: $light-blue-row;
+    }
+
+    td {
+        padding: .25rem .5rem;
+        font-size: .8rem;
+    }
+
+}
