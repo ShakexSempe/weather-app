@@ -67,4 +67,25 @@ body.blurred {
   width: 80px;
 }
 
+.day-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 75px);
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+.day-section .day-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.25rem;
+  border: 1px solid #002233;
+  border-radius: 0.25rem;
+}
+.day-section .day-card .day-card-day {
+  font-size: 0.75rem;
+  color: #004466;
+  margin-top: 0.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */

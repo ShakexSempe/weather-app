@@ -86,3 +86,32 @@ body {
         width: 80px;
     }
 }   
+
+
+// DAY SECTION
+.day-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 75px);
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 1rem;
+
+    // DAY CARD
+    .day-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .25rem;
+        border: 1px solid $dark-blue;
+        border-radius: .25rem;
+
+        // DAY CARD DATE 
+        .day-card-day {
+            font-size: .75rem;
+            color: $dark-blue-lt;
+            margin-top: .5rem;
+        }
+    }
+}
+
+
