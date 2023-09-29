@@ -17,9 +17,13 @@ function renderWeather({ current, daily, hourly }) {
 }
 
 // HELPER FUNCTION
+function setValue(selector, value,{ parent = document } = {} ) {
+    parent.querySelector(`[data-${selector}]`).textContent = value
+}
 
-
+// RENDER CURRENT WEATHER 
 function renderCurrentWeather(current) {
-    document.querySelector("[data-current-temp]").textContent = 
-    current.currentTemp
+    setValue("current-Temp", current.currentTemp);
+    // document.querySelector("[data-current-temp]").textContent = 
+    // current.currentTemp
 }
