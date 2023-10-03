@@ -21,8 +21,12 @@ function setValue(selector, value,{ parent = document } = {} ) {
     parent.querySelector(`[data-${selector}]`).textContent = value
 }
 
+
+// CURRENT WEATHER ICON
+const currentIcon = document.querySelector("[data-current-icon]")
 // RENDER CURRENT WEATHER 
 function renderCurrentWeather(current) {
+    // currentIcon.src = getIconUrl(current.iconCode);
     setValue("current-temp", current.currentTemp);
     setValue("current-high", current.highTemp);
     setValue("current-low", current.lowTemp);
